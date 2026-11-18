@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PT Mentari Samudera Abadi</title>
 <meta name="description" content="NVOCC, freight forwarding, dan logistik proyek dari Surabaya, dengan kantor di Jakarta, Belawan, dan Medan.">
-<script>try{var t=localStorage.getItem("bl-theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
+<script>document.documentElement.className="js";try{var t=localStorage.getItem("bl-theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-theme",t)}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="progress" id="progress"></div>
 
 <nav>
   <div class="wrap">
@@ -61,7 +62,7 @@
         <text class="r-sub" x="166" y="62">Cabang</text>
         <circle id="routeDot" class="r-dot" cx="420" cy="270" r="7"/>
       </svg>
-      <figcaption>Skema jaringan kantor, bukan peta berskala.</figcaption>
+      <figcaption><div class="readout" id="readout">Surabaya</div>Skema jaringan kantor, bukan peta berskala.</figcaption>
     </figure>
   </div>
 </header>
